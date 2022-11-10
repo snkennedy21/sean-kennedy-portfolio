@@ -26,7 +26,7 @@ function Header() {
   }
 
   function getWindowSize() {
-    const { innerWidth, innerHeight } = window;
+    const { innerWidth } = window;
     return innerWidth;
   }
 
@@ -54,13 +54,13 @@ function Header() {
 
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:w-80 md:mt-0 md:static md:translate-x-0 md:transition-none">
           <li>
-            <a>About</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a>Portfolio</a>
+            <a href="#">Portfolio</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -133,7 +133,7 @@ function Header() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a>About</a>
+              <a href="#">About</a>
             </li>
             <li
               className={`${
@@ -142,7 +142,7 @@ function Header() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a>Portfolio</a>
+              <a href="#">Portfolio</a>
             </li>
             <li
               className={`${
@@ -151,7 +151,7 @@ function Header() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a>Contact</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </div>
