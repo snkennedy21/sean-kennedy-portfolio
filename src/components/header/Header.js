@@ -54,13 +54,13 @@ function Header() {
 
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:w-80 md:mt-0 md:static md:translate-x-0 md:transition-none">
           <li>
-            <a href="#">About</a>
+            <a href="https://www.wikipedia.org/">About</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="https://www.wikipedia.org/">Portfolio</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="https://www.wikipedia.org/">Contact</a>
           </li>
         </ul>
       </nav>
@@ -133,7 +133,7 @@ function Header() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a href="#">About</a>
+              <a href="https://www.wikipedia.org/">About</a>
             </li>
             <li
               className={`${
@@ -142,7 +142,7 @@ function Header() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a href="#">Portfolio</a>
+              <a href="https://www.wikipedia.org/">Portfolio</a>
             </li>
             <li
               className={`${
@@ -151,7 +151,7 @@ function Header() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a href="#">Contact</a>
+              <a href="https://www.wikipedia.org/">Contact</a>
             </li>
           </ul>
         </div>
