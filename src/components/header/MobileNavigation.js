@@ -32,6 +32,7 @@ function MobileNavigation() {
 
   return (
     <React.Fragment>
+      {/* Navigation Hamburger */}
       <div
         onClick={toggleNavHandler}
         className="fixed top-7 right-5 md:hidden cursor-pointer z-50"
@@ -52,6 +53,8 @@ function MobileNavigation() {
           } transition duration-500 bg-white w-9 h-0.5 m-1.5 z-50`}
         ></div>
       </div>
+
+      {/* Mobile Navigation Pieces */}
       <div>
         <div
           className={`${
