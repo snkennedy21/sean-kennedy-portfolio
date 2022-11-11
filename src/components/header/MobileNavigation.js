@@ -21,6 +21,14 @@ function MobileNavigation() {
     };
   }, [windowSize]);
 
+  useEffect(() => {
+    if (navOpen) {
+      document.body.style.overflow = "hidden";
+    } else if (!navOpen) {
+      document.body.style.overflow = "unset";
+    }
+  }, [navOpen]);
+
   function toggleNavHandler() {
     setNavOpen(!navOpen);
   }
@@ -63,29 +71,32 @@ function MobileNavigation() {
         >
           <ul className="flex flex-col justify-around items-center h-full">
             <li
+              onClick={toggleNavHandler}
               className={`${
                 navOpen
-                  ? "opacity-1 delay-300 duration-1000"
+                  ? "opacity-1 delay-300 transition-[transform,opacity] duration-1000"
                   : "translate-x-6 opacity-0"
-              } text-white`}
+              } text-white hover:text-accentPrimary`}
             >
               <a href="#about">About</a>
             </li>
             <li
+              onClick={toggleNavHandler}
               className={`${
                 navOpen
-                  ? "opacity-1 delay-500 duration-1000"
+                  ? "opacity-1 delay-500 transition-[transform,opacity] duration-1000"
                   : "translate-x-6 opacity-0"
-              } text-white`}
+              } text-white hover:text-accentPrimary`}
             >
               <a href="#portfolio">Portfolio</a>
             </li>
             <li
+              onClick={toggleNavHandler}
               className={`${
                 navOpen
-                  ? "opacity-1 delay-700 duration-1000"
+                  ? "opacity-1 delay-700 transition-[transform,opacity] duration-1000"
                   : "translate-x-6 opacity-0"
-              } text-white`}
+              } text-white hover:text-accentPrimary`}
             >
               <a href="#contact">Contact</a>
             </li>
@@ -98,44 +109,68 @@ function MobileNavigation() {
         >
           <ul className="flex flex-col justify-around items-center h-full">
             <li
+              onClick={toggleNavHandler}
               className={`${
                 navOpen
-                  ? "opacity-1 delay-700 duration-1000"
+                  ? "opacity-1 delay-700 transition-[transform,opacity] duration-1000"
                   : "-translate-x-6 opacity-0"
-              } text-white flex flex-col items-center justify-center`}
+              } text-white hover:text-accentPrimary`}
             >
-              <FaGithub className="text-white w-6 h-6"></FaGithub>
-              <p className="text-white text-xs">Github</p>
+              <a
+                className="flex flex-col items-center justify-center"
+                href="https://github.com/snkennedy21"
+                target="_blank"
+              >
+                <FaGithub className="w-6 h-6"></FaGithub>
+                <p className="text-xs">Github</p>
+              </a>
             </li>
             <li
+              onClick={toggleNavHandler}
               className={`${
                 navOpen
-                  ? "opacity-1 delay-500 duration-1000"
+                  ? "opacity-1 delay-500 transition-[transform,opacity] duration-1000"
                   : "-translate-x-6 opacity-0"
-              } text-white flex flex-col items-center justify-center`}
+              } text-white hover:text-accentPrimary`}
             >
-              <FaGitlab className="text-white w-6 h-6"></FaGitlab>
-              <p className="text-white text-xs">Github</p>
+              <a
+                className="flex flex-col items-center justify-center"
+                href="https://gitlab.com/snkennedy21"
+                target="_blank"
+              >
+                <FaGitlab className="w-6 h-6"></FaGitlab>
+                <p className="text-xs">Github</p>
+              </a>
             </li>
             <li
+              onClick={toggleNavHandler}
               className={`${
                 navOpen
-                  ? "opacity-1 delay-300 duration-1000"
+                  ? "opacity-1 delay-300 transition-[transform,opacity] duration-1000"
                   : "-translate-x-6 opacity-0"
-              } text-white flex flex-col items-center justify-center`}
+              } text-white hover:text-accentPrimary`}
             >
-              <FaRegFileAlt className="text-white w-6 h-6"></FaRegFileAlt>
-              <p className="text-white text-xs">Resume</p>
+              <a className="flex flex-col items-center justify-center" href="">
+                <FaRegFileAlt className="w-6 h-6"></FaRegFileAlt>
+                <p className="text-xs">Resume</p>
+              </a>
             </li>
             <li
+              onClick={toggleNavHandler}
               className={`${
                 navOpen
-                  ? "opacity-1 delay-100 duration-1000"
+                  ? "opacity-1 delay-100 transition-[transform,opacity] duration-1000"
                   : "-translate-x-6 opacity-0"
-              } text-white flex flex-col items-center justify-center`}
+              } text-white hover:text-accentPrimary`}
             >
-              <FaLinkedin className="text-white w-6 h-6"></FaLinkedin>
-              <p className="text-white text-xs">LinkedIn</p>
+              <a
+                className="flex flex-col items-center justify-center"
+                href="https://www.linkedin.com/in/sean-kennedy-208b48232/"
+                target="_blank"
+              >
+                <FaLinkedin className="w-6 h-6"></FaLinkedin>
+                <p className="text-xs">LinkedIn</p>
+              </a>
             </li>
           </ul>
         </div>

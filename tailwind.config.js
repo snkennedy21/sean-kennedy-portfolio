@@ -9,7 +9,7 @@ module.exports = {
         softPrimary: "#F5F8FD",
         textColor: "#272829",
         darkColor: "#1D1D1D",
-        mobileNavColor: "#343434ca;",
+        mobileNavColor: "#323232f6;",
         lightGrey: "#A8A9B4",
       },
     },

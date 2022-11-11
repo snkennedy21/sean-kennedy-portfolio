@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { FaEye, FaGithub, FaGitlab } from "react-icons/fa";
+import { FaEye, FaGithub, FaGitlab, FaRegFileAlt } from "react-icons/fa";
 
 function PortfolioProject(props) {
   const [projectHover, setProjectHover] = useState(false);
@@ -31,7 +31,11 @@ function PortfolioProject(props) {
                 : "-translate-y-10 opacity-0"
             } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
           >
-            <a href={props.liveLink}>
+            <a
+              className="flex flex-col justify-center items-center"
+              href={props.liveLink}
+              target="_blank"
+            >
               <FaEye className="w-10 h-10"></FaEye>
               <p>Live</p>
             </a>
@@ -43,7 +47,11 @@ function PortfolioProject(props) {
                 : "-translate-y-10 opacity-0"
             } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
           >
-            <a href={props.codeLink}>
+            <a
+              className="flex flex-col justify-center items-center"
+              href={props.codeLink}
+              target="_blank"
+            >
               {props.code === "github" ? (
                 <FaGithub className="w-10 h-10" />
               ) : (
@@ -59,8 +67,8 @@ function PortfolioProject(props) {
                 : "-translate-y-10 opacity-0"
             } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
           >
-            <FaEye className="w-10 h-10"></FaEye>
-            <p>Live</p>
+            <FaRegFileAlt className="w-10 h-10"></FaRegFileAlt>
+            <p>About</p>
           </li>
         </ul>
       </div>
