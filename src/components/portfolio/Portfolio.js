@@ -29,6 +29,30 @@ const projects = [
     codeLink: "https://github.com/snkennedy21/Gourmet-App",
     liveLink: "https://comfy-meringue-3629d2.netlify.app/#close",
   },
+  {
+    name: "Deck Reactor",
+    tech: "FastAPI | React | MongoDB | Bootstrap",
+    image: deckreactorImage,
+    code: "gitlab",
+    codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
+    liveLink: "https://mtgt.gitlab.io/module3-project-gamma/",
+  },
+  {
+    name: "Nerdle Werdle",
+    tech: "HTML | CSS | Javascript ",
+    image: nerdleWerdleImage,
+    code: "github",
+    codeLink: "https://github.com/snkennedy21/Werdle-Nerdles",
+    liveLink: "https://nerdlewerdle.netlify.app/",
+  },
+  {
+    name: "Gourmet",
+    tech: "HTML | CSS | Javascript ",
+    image: gourmetImage,
+    code: "github",
+    codeLink: "https://github.com/snkennedy21/Gourmet-App",
+    liveLink: "https://comfy-meringue-3629d2.netlify.app/#close",
+  },
 ];
 
 function Portfolio() {

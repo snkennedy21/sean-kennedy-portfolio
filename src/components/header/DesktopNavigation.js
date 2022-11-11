@@ -13,7 +13,7 @@ function DesktopNavigation() {
 
   return (
     <React.Fragment>
-      <nav className="absolute top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10">
+      <nav className="fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10">
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:w-80 md:mt-0 md:static md:translate-x-0 md:transition-none">
           <li className="flex flex-col justify-center items-center">
             <FaGithub className="text-white w-6 h-6"></FaGithub>
