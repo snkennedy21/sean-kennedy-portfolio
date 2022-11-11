@@ -3,6 +3,7 @@ import PortfolioProject from "./PortfolioProject";
 import deckreactorImage from "../../images/deckreactor-image.png";
 import nerdleWerdleImage from "../../images/nerdle-werdle-image.png";
 import gourmetImage from "../../images/gourmet-image.png";
+import SectionHeader from "../ui/SectionHeader";
 
 const projects = [
   {
@@ -57,11 +58,9 @@ const projects = [
 
 function Portfolio() {
   return (
-    <section className="mx-40">
-      <h1 className="text-white text-4xl underline underline-offset-8 decoration-2 decoration-accentPrimary">
-        Portfolio
-      </h1>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-10">
+    <section id="portfolio" className="mx-16 lg:mx-28">
+      <SectionHeader>Portfolio</SectionHeader>
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-10">
         {projects.map((project) => {
           return (
             <PortfolioProject

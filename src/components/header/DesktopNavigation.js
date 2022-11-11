@@ -3,17 +3,42 @@ import { useState, useEffect } from "react";
 import { FaGithub, FaGitlab, FaRegFileAlt, FaLinkedin } from "react-icons/fa";
 
 function DesktopNavigation() {
-  const [navOpen, setNavOpen] = useState(false);
-  const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  function getWindowSize() {
-    const { innerWidth } = window;
-    return innerWidth;
-  }
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scroll down hide the navbar
+        setShow(false);
+      } else {
+        // if scroll up show the navbar
+        setShow(true);
+      }
+
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
     <React.Fragment>
-      <nav className="fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10">
+      <nav
+        className={`${
+          show ? "" : "-translate-y-20"
+        } fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10 transition duration-500`}
+      >
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:w-80 md:mt-0 md:static md:translate-x-0 md:transition-none">
           <li className="flex flex-col justify-center items-center">
             <FaGithub className="text-white w-6 h-6"></FaGithub>
@@ -35,10 +60,10 @@ function DesktopNavigation() {
 
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:w-80 md:mt-0 md:static md:translate-x-0 md:transition-none">
           <li>
-            <a href="https://www.wikipedia.org/">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="https://www.wikipedia.org/">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li>
             <a href="https://www.wikipedia.org/">Contact</a>

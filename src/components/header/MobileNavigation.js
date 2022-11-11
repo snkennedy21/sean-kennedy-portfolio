@@ -69,7 +69,7 @@ function MobileNavigation() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a href="https://www.wikipedia.org/">About</a>
+              <a href="#about">About</a>
             </li>
             <li
               className={`${
@@ -78,7 +78,7 @@ function MobileNavigation() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a href="https://www.wikipedia.org/">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li
               className={`${
@@ -87,7 +87,7 @@ function MobileNavigation() {
                   : "translate-x-6 opacity-0"
               } text-white`}
             >
-              <a href="https://www.wikipedia.org/">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
