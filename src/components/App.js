@@ -1,13 +1,17 @@
 import DesktopNavigation from "./header/DesktopNavigation";
 import Hero from "./hero/Hero";
-import MobileNav from "./header/MobileNav";
+import MobileNavigation from "./header/MobileNavigation";
+import Portfolio from "./portfolio/Portfolio";
 
 function App() {
+  document.body.style.overflowX = "hidden";
+
   return (
     <div className="App bg-darkColor">
       <DesktopNavigation></DesktopNavigation>
-      <MobileNav></MobileNav>
+      <MobileNavigation></MobileNavigation>
       <Hero></Hero>
+      <Portfolio></Portfolio>
     </div>
   );
 }

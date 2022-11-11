@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { FaGithub, FaGitlab, FaRegFileAlt, FaLinkedin } from "react-icons/fa";
 
-function MobileNav() {
+function MobileNavigation() {
   const [navOpen, setNavOpen] = useState(false);
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
@@ -141,4 +141,4 @@ function MobileNav() {
   );
 }
 
-export default MobileNav;
+export default MobileNavigation;
