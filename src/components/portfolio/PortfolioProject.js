@@ -27,7 +27,7 @@ function PortfolioProject(props) {
           <li
             className={`${
               projectHover
-                ? "translate-y-0 opacity-100 transition duration-500"
+                ? "translate-y-0 opacity-100 transition-[opacity,transform] duration-700"
                 : "-translate-y-10 opacity-0"
             } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
           >
@@ -37,7 +37,7 @@ function PortfolioProject(props) {
           <li
             className={`${
               projectHover
-                ? "translate-y-0 opacity-100 transition duration-500 delay-150"
+                ? "translate-y-0 opacity-100 transition-[opacity,transform] duration-700 delay-150"
                 : "-translate-y-10 opacity-0"
             } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
           >
@@ -47,7 +47,7 @@ function PortfolioProject(props) {
           <li
             className={`${
               projectHover
-                ? "translate-y-0 opacity-100 transition duration-500 delay-300"
+                ? "translate-y-0 opacity-100 transition-[opacity,transform] duration-700 delay-300"
                 : "-translate-y-10 opacity-0"
             } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
           >
