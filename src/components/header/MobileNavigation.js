@@ -59,7 +59,7 @@ function MobileNavigation() {
         <div
           className={`${
             navOpen ? "translate-x-0" : "translate-x-full"
-          } transition duration-500 absolute top-0 flex justify-center items-center h-2/4 w-full z-10 bg-mobileNavColor`}
+          } transition duration-500 fixed top-0 flex justify-center items-center h-2/4 w-full z-10 bg-mobileNavColor`}
         >
           <ul className="flex flex-col justify-around items-center h-full">
             <li
@@ -94,7 +94,7 @@ function MobileNavigation() {
         <div
           className={`${
             navOpen ? "translate-x-0" : "-translate-x-full"
-          } transition duration-500 absolute top-1/2 flex justify-center items-center h-2/4 w-full z-10 bg-mobileNavColor`}
+          } transition duration-500 fixed top-1/2 flex justify-center items-center h-2/4 w-full z-10 bg-mobileNavColor`}
         >
           <ul className="flex flex-col justify-around items-center h-full">
             <li
