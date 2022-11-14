@@ -37,7 +37,7 @@ function DesktopNavigation() {
       <nav
         className={`${
           show ? "" : "-translate-y-20"
-        } fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10 transition duration-500`}
+        } fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10 transition duration-500 opacity-0 md:opacity-100`}
       >
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:w-80 md:mt-0 md:static md:translate-x-0 md:transition-none">
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer">
@@ -86,7 +86,7 @@ function DesktopNavigation() {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer">
-            <a href="https://www.wikipedia.org/">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

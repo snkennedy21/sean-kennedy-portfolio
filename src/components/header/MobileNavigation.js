@@ -10,7 +10,6 @@ function MobileNavigation() {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
       if (windowSize > 768) {
-        console.log("hello");
         setNavOpen(false);
       }
     }
@@ -63,7 +62,7 @@ function MobileNavigation() {
       </div>
 
       {/* Mobile Navigation Pieces */}
-      <div>
+      <nav>
         <div
           className={`${
             navOpen ? "translate-x-0" : "translate-x-full"
@@ -174,7 +173,7 @@ function MobileNavigation() {
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
     </React.Fragment>
   );
 }
