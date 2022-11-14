@@ -8,47 +8,25 @@ import SectionHeader from "../ui/SectionHeader";
 const projects = [
   {
     name: "Deck Reactor",
-    tech: "FastAPI | React | MongoDB | Bootstrap",
+    tech: "FastAPI  |  React  |  MongoDB  |  Bootstrap",
     image: deckreactorImage,
     code: "gitlab",
     codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
     liveLink: "https://mtgt.gitlab.io/module3-project-gamma/",
   },
+
   {
     name: "Nerdle Werdle",
-    tech: "HTML | CSS | Javascript ",
+    tech: "Javascript  |  HTML  |  CSS ",
     image: nerdleWerdleImage,
     code: "github",
     codeLink: "https://github.com/snkennedy21/Werdle-Nerdles",
     liveLink: "https://nerdlewerdle.netlify.app/",
   },
+
   {
     name: "Gourmet",
-    tech: "HTML | CSS | Javascript ",
-    image: gourmetImage,
-    code: "github",
-    codeLink: "https://github.com/snkennedy21/Gourmet-App",
-    liveLink: "https://comfy-meringue-3629d2.netlify.app/#close",
-  },
-  {
-    name: "Deck Reactor",
-    tech: "FastAPI | React | MongoDB | Bootstrap",
-    image: deckreactorImage,
-    code: "gitlab",
-    codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
-    liveLink: "https://mtgt.gitlab.io/module3-project-gamma/",
-  },
-  {
-    name: "Nerdle Werdle",
-    tech: "HTML | CSS | Javascript ",
-    image: nerdleWerdleImage,
-    code: "github",
-    codeLink: "https://github.com/snkennedy21/Werdle-Nerdles",
-    liveLink: "https://nerdlewerdle.netlify.app/",
-  },
-  {
-    name: "Gourmet",
-    tech: "HTML | CSS | Javascript ",
+    tech: "Javascript  |  HTML  |  CSS ",
     image: gourmetImage,
     code: "github",
     codeLink: "https://github.com/snkennedy21/Gourmet-App",
@@ -58,8 +36,11 @@ const projects = [
 
 function Portfolio() {
   return (
-    <section id="portfolio" className="mx-16 lg:mx-28">
+    <section id="portfolio" className="mx-4 md:mx-16 lg:mx-28">
       <SectionHeader>Portfolio</SectionHeader>
+      <p className="my-10 text-white text-2xl">
+        Check out some of the websites I've built
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-10">
         {projects.map((project) => {
           return (

@@ -3,41 +3,10 @@ import { useState, useEffect } from "react";
 import { FaGithub, FaGitlab, FaRegFileAlt, FaLinkedin } from "react-icons/fa";
 
 function DesktopNavigation() {
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        // if scroll down hide the navbar
-        setShow(false);
-      } else {
-        // if scroll up show the navbar
-        setShow(true);
-      }
-
-      // remember current page location to use in the next move
-      setLastScrollY(window.scrollY);
-    }
-  };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-
-      // cleanup function
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [lastScrollY]);
-
   return (
     <React.Fragment>
       <nav
-        className={`${
-          show ? "" : "-translate-y-20"
-        } fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10 transition duration-500 opacity-0 md:opacity-100`}
+        className={`fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10 transition duration-500 opacity-0 md:opacity-100`}
       >
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:w-80 md:mt-0 md:static md:translate-x-0 md:transition-none">
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer">

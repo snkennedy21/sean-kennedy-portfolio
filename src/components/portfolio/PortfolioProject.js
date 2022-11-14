@@ -6,14 +6,18 @@ function PortfolioProject(props) {
   const [projectHover, setProjectHover] = useState(false);
 
   function projectHoverHandler() {
-    setProjectHover(!projectHover);
+    setProjectHover(true);
+  }
+
+  function projectHoverRemoveHandler() {
+    setProjectHover(false);
   }
 
   return (
-    <React.Fragment>
+    <div className="flex flex-col justify-start items-center">
       <div
         onMouseEnter={projectHoverHandler}
-        onMouseLeave={projectHoverHandler}
+        onMouseLeave={projectHoverRemoveHandler}
         className="relative w-full bg-white rounded-lg overflow-hidden"
       >
         <img src={props.image} />
@@ -29,7 +33,7 @@ function PortfolioProject(props) {
               projectHover
                 ? "translate-y-0 opacity-100 transition-[opacity,transform] duration-700"
                 : "-translate-y-10 opacity-0"
-            } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
+            } flex flex-col justify-center items-center cursor-pointer hover:text-secondaryColor`}
           >
             <a
               className="flex flex-col justify-center items-center"
@@ -45,7 +49,7 @@ function PortfolioProject(props) {
               projectHover
                 ? "translate-y-0 opacity-100 transition-[opacity,transform] duration-700 delay-150"
                 : "-translate-y-10 opacity-0"
-            } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
+            } flex flex-col justify-center items-center cursor-pointer hover:text-secondaryColor`}
           >
             <a
               className="flex flex-col justify-center items-center"
@@ -65,14 +69,17 @@ function PortfolioProject(props) {
               projectHover
                 ? "translate-y-0 opacity-100 transition-[opacity,transform] duration-700 delay-300"
                 : "-translate-y-10 opacity-0"
-            } flex flex-col justify-center items-center cursor-pointer hover:text-red-500`}
+            } flex flex-col justify-center items-center cursor-pointer hover:text-secondaryColor`}
           >
             <FaRegFileAlt className="w-10 h-10"></FaRegFileAlt>
             <p>About</p>
           </li>
         </ul>
       </div>
-    </React.Fragment>
+      <div>
+        <p className="text-accentPrimary">{props.tech}</p>
+      </div>
+    </div>
   );
 }
 

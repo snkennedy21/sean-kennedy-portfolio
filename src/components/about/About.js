@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "../../images/hero-image.png";
 import SectionHeader from "../ui/SectionHeader";
 
 import tailwindLogo from "../../images/tailwind-logo.png";
@@ -14,22 +13,24 @@ import pythonLogo from "../../images/python-logo.png";
 import postgresLogo from "../../images/postgres-logo.png";
 import gitLogo from "../../images/git-logo.png";
 import mongoLogo from "../../images/mongo-logo.png";
+import aboutImage from "../../images/about-image.png";
 import { css } from "@emotion/react";
 
 function About() {
   return (
-    <section id="about" className="mx-16 lg:mx-28">
+    <section id="about" className="mx-4 md:mx-16 lg:mx-28">
       <SectionHeader>About</SectionHeader>
-      <div className="text-white">
-        <h1>Hello</h1>
-        <h2>I'm Sean Kennedy</h2>
-        <p>
-          I'm a full stack web developer who's passionate about learning new
-          technologies and strategies for solving problems
+      <div>
+        <h2 className="text-white text-4xl">Hi, I'm Sean Kennedy</h2>
+        <p className="text-white text-2xl">
+          I'm a full stack web developer with a passion for learning new
+          technologies.
         </p>
       </div>
 
-      <h2 className="text-white text-2xl">Check out the tech stack I love</h2>
+      <h2 className="text-white text-3xl mt-5 mb-10">
+        Check out the tech stack I love
+      </h2>
       <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 justify-center items-center text-white">
         <li className="flex flex-col justify-center items-center">
           <img className="w-1/4" src={javascriptLogo} />
