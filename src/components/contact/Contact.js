@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <section id="contact" className="mx-4 md:mx-16 lg:mx-28">
+    <section id="contact" className="mx-12 md:mx-16 lg:mx-28">
       <SectionHeader>Contact</SectionHeader>
       <ContactForm />
     </section>

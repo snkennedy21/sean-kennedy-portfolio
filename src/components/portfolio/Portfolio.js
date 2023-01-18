@@ -3,12 +3,22 @@ import PortfolioProject from "./PortfolioProject";
 import deckreactorImage from "../../images/deckreactor-image.png";
 import nerdleWerdleImage from "../../images/nerdle-werdle-image.png";
 import gourmetImage from "../../images/gourmet-image.png";
+import fullStackOverflowImage from "../../images/fullstackoverflow.png";
 import SectionHeader from "../ui/SectionHeader";
 
 const projects = [
   {
+    name: "Full Stack Overflow",
+    tech: "FastAPI  |  React  |  PostgreSQL  |  Tailwind  |  Docker",
+    image: fullStackOverflowImage,
+    code: "gitlab",
+    codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
+    liveLink: "https://full-stack-overflow.netlify.app/",
+  },
+
+  {
     name: "Deck Reactor",
-    tech: "FastAPI  |  React  |  MongoDB  |  Bootstrap",
+    tech: "FastAPI  |  React  |  MongoDB  |  Bootstrap  |  Docker",
     image: deckreactorImage,
     code: "gitlab",
     codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
@@ -36,11 +46,11 @@ const projects = [
 
 function Portfolio() {
   return (
-    <section id="portfolio" className="mx-4 md:mx-16 lg:mx-28">
+    <section id="portfolio" className="mx-12 md:mx-16 lg:mx-28">
       <SectionHeader>Portfolio</SectionHeader>
-      <p className="my-10 text-white text-2xl">
-        Check out some of the websites I've built
-      </p>
+      <h2 className="text-white text-3xl mt-5 mb-10">
+        Check out some of the projects I've built
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-10">
         {projects.map((project) => {
           return (

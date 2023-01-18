@@ -4,7 +4,7 @@ import ButtonPrimary from "../ui/ButtonPrimary";
 function ContactForm() {
   return (
     <React.Fragment>
-      <div className="flex flex-col justify-center items-center py-28">
+      <div className="flex flex-col justify-center items-center py-6">
         <h2 className="text-4xl md:text-6xl text-accentPrimary">
           Send Me a Message
         </h2>

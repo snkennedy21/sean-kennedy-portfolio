@@ -68,7 +68,7 @@ function MobileNavigation() {
             navOpen ? "translate-x-0" : "translate-x-full"
           } transition duration-500 fixed top-0 flex justify-center items-center h-2/4 w-full z-10 bg-mobileNavColor`}
         >
-          <ul className="flex flex-col justify-around items-center h-full">
+          <ul className="flex flex-col justify-around items-center h-full text-3xl">
             <li
               onClick={toggleNavHandler}
               className={`${
@@ -77,7 +77,7 @@ function MobileNavigation() {
                   : "translate-x-6 opacity-0"
               } text-white hover:text-accentPrimary`}
             >
-              <a href="#about">About</a>
+              <a href="#about">Skills</a>
             </li>
             <li
               onClick={toggleNavHandler}
@@ -120,8 +120,8 @@ function MobileNavigation() {
                 href="https://github.com/snkennedy21"
                 target="_blank"
               >
-                <FaGithub className="w-6 h-6"></FaGithub>
-                <p className="text-xs">Github</p>
+                <FaGithub className="w-10 h-10"></FaGithub>
+                <p className="text-xl">Github</p>
               </a>
             </li>
             <li
@@ -137,8 +137,8 @@ function MobileNavigation() {
                 href="https://gitlab.com/snkennedy21"
                 target="_blank"
               >
-                <FaGitlab className="w-6 h-6"></FaGitlab>
-                <p className="text-xs">Github</p>
+                <FaGitlab className="w-10 h-10"></FaGitlab>
+                <p className="text-xl">Github</p>
               </a>
             </li>
             <li
@@ -150,8 +150,8 @@ function MobileNavigation() {
               } text-white hover:text-accentPrimary`}
             >
               <a className="flex flex-col items-center justify-center" href="">
-                <FaRegFileAlt className="w-6 h-6"></FaRegFileAlt>
-                <p className="text-xs">Resume</p>
+                <FaRegFileAlt className="w-10 h-10"></FaRegFileAlt>
+                <p className="text-xl">Resume</p>
               </a>
             </li>
             <li
@@ -167,8 +167,8 @@ function MobileNavigation() {
                 href="https://www.linkedin.com/in/sean-kennedy-208b48232/"
                 target="_blank"
               >
-                <FaLinkedin className="w-6 h-6"></FaLinkedin>
-                <p className="text-xs">LinkedIn</p>
+                <FaLinkedin className="w-10 h-10"></FaLinkedin>
+                <p className="text-xl">LinkedIn</p>
               </a>
             </li>
           </ul>
