@@ -40,8 +40,8 @@ function PortfolioProject(props) {
               href={props.liveLink}
               target="_blank"
             >
-              <FaEye className="w-10 h-10"></FaEye>
-              <p>Live</p>
+              <FaEye className="w-8 h-8 sm:w-7 sm:h-7 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10"></FaEye>
+              <p className="text-sm">Live</p>
             </a>
           </li>
           <li
@@ -57,11 +57,11 @@ function PortfolioProject(props) {
               target="_blank"
             >
               {props.code === "github" ? (
-                <FaGithub className="w-10 h-10" />
+                <FaGithub className="w-8 h-8 sm:w-7 sm:h-7 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10" />
               ) : (
-                <FaGitlab className="w-10 h-10" />
+                <FaGitlab className="w-8 h-8 sm:w-7 sm:h-7 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10" />
               )}
-              <p>Code</p>
+              <p className="text-sm">Code</p>
             </a>
           </li>
           <li
@@ -71,8 +71,8 @@ function PortfolioProject(props) {
                 : "-translate-y-10 opacity-0"
             } flex flex-col justify-center items-center cursor-pointer hover:text-secondaryColor`}
           >
-            <FaRegFileAlt className="w-10 h-10"></FaRegFileAlt>
-            <p>About</p>
+            <FaRegFileAlt className="w-8 h-8 sm:w-7 sm:h-7 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10"></FaRegFileAlt>
+            <p className="text-sm">About</p>
           </li>
         </ul>
       </div>

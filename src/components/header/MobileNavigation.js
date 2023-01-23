@@ -42,7 +42,7 @@ function MobileNavigation() {
       {/* Navigation Hamburger */}
       <div
         onClick={toggleNavHandler}
-        className="fixed top-7 right-5 lg:hidden cursor-pointer z-50"
+        className="fixed top-4 right-5 lg:hidden cursor-pointer z-50 py-4 px-2 rounded-full bg-darkColor"
       >
         <div
           className={`${
@@ -63,9 +63,6 @@ function MobileNavigation() {
 
       {/* Mobile Navigation Pieces */}
       <nav>
-        <div className="fixed top-24 right-5 text-white text-red-500 sm:text-orange-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500 2xl:text-purple-500">
-          Size
-        </div>
         <div
           className={`${
             navOpen ? "translate-x-0" : "translate-x-full"

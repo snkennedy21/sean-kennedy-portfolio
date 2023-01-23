@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { FaGithub, FaGitlab, FaRegFileAlt, FaLinkedin } from "react-icons/fa";
+import Resume from "../../files/Kennedy_Sean_Resume.pdf";
 
 function DesktopNavigation() {
   return (
@@ -30,7 +31,11 @@ function DesktopNavigation() {
             </a>
           </li>
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer">
-            <a className="flex flex-col justify-center items-center" href="">
+            <a
+              className="flex flex-col justify-center items-center"
+              href={Resume}
+              target="_blank"
+            >
               <FaRegFileAlt className="w-7 h-7 2xl:w-8 2xl:h-8"></FaRegFileAlt>
               <p className="text-xs 2xl:text-sm">Resume</p>
             </a>
