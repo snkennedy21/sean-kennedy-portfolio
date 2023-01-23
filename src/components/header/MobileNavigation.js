@@ -9,7 +9,7 @@ function MobileNavigation() {
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
-      if (windowSize > 768) {
+      if (windowSize > 1024) {
         setNavOpen(false);
       }
     }
@@ -42,7 +42,7 @@ function MobileNavigation() {
       {/* Navigation Hamburger */}
       <div
         onClick={toggleNavHandler}
-        className="fixed top-7 right-5 md:hidden cursor-pointer z-50"
+        className="fixed top-7 right-5 lg:hidden cursor-pointer z-50"
       >
         <div
           className={`${

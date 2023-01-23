@@ -6,9 +6,9 @@ function DesktopNavigation() {
   return (
     <React.Fragment>
       <nav
-        className={`fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10 transition duration-500 opacity-0 md:opacity-100`}
+        className={`fixed top-0 left-0 w-full px-10 py-5 flex justify-between items-center bg-darkColor z-10  opacity-0 lg:opacity-100`}
       >
-        <ul className="hidden md:static md:flex md:text-white md:justify-between md:static w-80 2xl:w-96 md:mt-0 md:static md:translate-x-0 md:transition-none">
+        <ul className="hidden lg:static lg:flex lg:text-white lg:justify-between lg:static w-80 2xl:w-96 lg:mt-0 lg:static lg:translate-x-0 lg:transition-none">
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer">
             <a
               className="flex flex-col justify-center items-center"
@@ -47,7 +47,7 @@ function DesktopNavigation() {
           </li>
         </ul>
 
-        <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:mt-0 md:static md:translate-x-0 md:transition-none w-80 2xl:w-96">
+        <ul className="hidden lg:static lg:flex lg:text-white lg:justify-between lg:static lg:mt-0 lg:static lg:translate-x-0 lg:transition-none w-80 2xl:w-96">
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer text-xl 2xl:text-3xl">
             <a href="#about">About</a>
           </li>
