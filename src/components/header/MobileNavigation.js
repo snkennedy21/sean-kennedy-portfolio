@@ -63,6 +63,9 @@ function MobileNavigation() {
 
       {/* Mobile Navigation Pieces */}
       <nav>
+        <div className="fixed top-24 right-5 text-white text-red-500 sm:text-orange-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500 2xl:text-purple-500">
+          Size
+        </div>
         <div
           className={`${
             navOpen ? "translate-x-0" : "translate-x-full"
@@ -77,7 +80,7 @@ function MobileNavigation() {
                   : "translate-x-6 opacity-0"
               } text-white hover:text-accentPrimary`}
             >
-              <a href="#about">Skills</a>
+              <a href="#about">About</a>
             </li>
             <li
               onClick={toggleNavHandler}

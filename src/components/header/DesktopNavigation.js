@@ -49,7 +49,7 @@ function DesktopNavigation() {
 
         <ul className="hidden md:static md:flex md:text-white md:justify-between md:static md:mt-0 md:static md:translate-x-0 md:transition-none w-80 2xl:w-96">
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer text-xl 2xl:text-3xl">
-            <a href="#about">Skills</a>
+            <a href="#about">About</a>
           </li>
           <li className="text-white hover:text-accentPrimary transition duration-300 cursor-pointer text-xl 2xl:text-3xl">
             <a href="#portfolio">Portfolio</a>

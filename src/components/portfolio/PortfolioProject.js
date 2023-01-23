@@ -77,7 +77,7 @@ function PortfolioProject(props) {
         </ul>
       </div>
       <div>
-        <p className="text-accentPrimary text-xl sm:text-sm lg:text-lg xl:text-xl">
+        <p className="text-accentPrimary text-md sm:text-xs md:text-md lg:text-lg xl:text-sm 2xl:text-lg">
           {props.tech}
         </p>
       </div>

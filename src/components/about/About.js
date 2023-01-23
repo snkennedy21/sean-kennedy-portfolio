@@ -18,59 +18,73 @@ import { css } from "@emotion/react";
 
 function About() {
   return (
-    <section id="about" className="mx-4 mx-12 md:mx-16 lg:mx-28">
-      <SectionHeader>Skills</SectionHeader>
+    <section id="about" className="mx-3.5 mx-12 md:mx-16 lg:mx-28">
+      <SectionHeader>About</SectionHeader>
 
-      <h2 className="text-white text-3xl mt-5 mb-10">
-        Check out the tech stack I use
-      </h2>
-      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 justify-center items-center text-white">
+      <div className="flex justify-center">
+        <div className="w-[1300px]">
+          <p className="text-sm leading-loose text-white sm:text-lg sm:leading-loose md:text-xl md:leading-loose lg:text-2xl lg:leading-loose xl:text-3xl xl:leading-loose 2xl:text-4xl 2xl:leading-loose">
+            As a software developer, I have a passion for creating innovative
+            and effective solutions to complex technical challenges. My
+            expertise lies in developing high-quality, scalable, and
+            maintainable code using a range of modern tools and technologies,
+            including React, Redux, Django, and FastAPI. I am a strong
+            collaborator, with experience working in cross-functional teams to
+            deliver successful projects on time. I am always looking for new
+            ways to improve my skills and stay up to date with the latest
+            developments in the field. I am excited to connect with other
+            professionals and explore opportunities for growth and
+            collaboration.
+          </p>
+        </div>
+      </div>
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 justify-center items-center text-white mt-20">
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={javascriptLogo} />
+          <img className="w-1/3 sm:w-1/4 2xl:w-1/4" src={javascriptLogo} />
           <p>Javascript</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={pythonLogo} />
+          <img className="w-1/3 sm:w-1/4" src={pythonLogo} />
           <p>Python</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={reactLogo} />
+          <img className="w-1/3 sm:w-1/4" src={reactLogo} />
           <p>React</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={fastApiLogo} />
+          <img className="w-1/3 sm:w-1/4" src={fastApiLogo} />
           <p>Fast API</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={djangoLogo} />
+          <img className="w-1/3 sm:w-1/4" src={djangoLogo} />
           <p>Django</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={htmlLogo} />
+          <img className="w-1/3 sm:w-1/4" src={htmlLogo} />
           <p>HTML</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={cssLogo} />
+          <img className="w-1/3 sm:w-1/4" src={cssLogo} />
           <p>CSS</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={gitLogo} />
+          <img className="w-1/3 sm:w-1/4" src={gitLogo} />
           <p>Git</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={tailwindLogo} />
-          <p>Tailwind</p>
+          <img className="w-1/3 sm:w-1/4" src={tailwindLogo} />
+          <p>Tailwind CSS</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={postgresLogo} />
+          <img className="w-1/3 sm:w-1/4" src={postgresLogo} />
           <p>PostgreSQL</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={bootstrapLogo} />
+          <img className="w-1/3 sm:w-1/4" src={bootstrapLogo} />
           <p>Bootstrap</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 2xl:w-1/4" src={mongoLogo} />
+          <img className="w-1/3 sm:w-1/4" src={mongoLogo} />
           <p>MongoDB</p>
         </li>
       </ul>

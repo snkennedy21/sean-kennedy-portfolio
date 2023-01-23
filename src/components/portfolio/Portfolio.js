@@ -48,9 +48,6 @@ function Portfolio() {
   return (
     <section id="portfolio" className="mx-12 md:mx-16 lg:mx-28">
       <SectionHeader>Portfolio</SectionHeader>
-      <h2 className="text-white text-3xl mt-5 mb-10">
-        Check out some of the projects I've built
-      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-10">
         {projects.map((project) => {
           return (
