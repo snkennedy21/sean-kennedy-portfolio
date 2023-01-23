@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { FaGithub, FaGitlab, FaRegFileAlt, FaLinkedin } from "react-icons/fa";
+import Resume from "../../files/Kennedy_Sean_Resume.pdf";
 
 function MobileNavigation() {
   const [navOpen, setNavOpen] = useState(false);
@@ -119,6 +120,7 @@ function MobileNavigation() {
                 className="flex flex-col items-center justify-center"
                 href="https://github.com/snkennedy21"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub className="w-10 h-10"></FaGithub>
                 <p className="text-xl">Github</p>
@@ -136,9 +138,10 @@ function MobileNavigation() {
                 className="flex flex-col items-center justify-center"
                 href="https://gitlab.com/snkennedy21"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGitlab className="w-10 h-10"></FaGitlab>
-                <p className="text-xl">Github</p>
+                <p className="text-xl">Gitlab</p>
               </a>
             </li>
             <li
@@ -149,7 +152,12 @@ function MobileNavigation() {
                   : "-translate-x-6 opacity-0"
               } text-white hover:text-accentPrimary`}
             >
-              <a className="flex flex-col items-center justify-center" href="">
+              <a
+                className="flex flex-col items-center justify-center"
+                href={Resume}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaRegFileAlt className="w-10 h-10"></FaRegFileAlt>
                 <p className="text-xl">Resume</p>
               </a>
@@ -166,6 +174,7 @@ function MobileNavigation() {
                 className="flex flex-col items-center justify-center"
                 href="https://www.linkedin.com/in/sean-kennedy-208b48232/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaLinkedin className="w-10 h-10"></FaLinkedin>
                 <p className="text-xl">LinkedIn</p>

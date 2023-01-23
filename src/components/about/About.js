@@ -38,51 +38,71 @@ function About() {
       </div>
       <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 justify-center items-center text-white mt-20">
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4 2xl:w-1/4" src={javascriptLogo} />
+          <img
+            className="w-1/3 sm:w-1/4 2xl:w-1/4"
+            src={javascriptLogo}
+            alt="javascript logo"
+          />
           <p>Javascript</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={pythonLogo} />
+          <img className="w-1/3 sm:w-1/4" src={pythonLogo} alt="Python logo" />
           <p>Python</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={reactLogo} />
+          <img className="w-1/3 sm:w-1/4" src={reactLogo} alt="React logo" />
           <p>React</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={fastApiLogo} />
+          <img
+            className="w-1/3 sm:w-1/4"
+            src={fastApiLogo}
+            alt="Fast API logo"
+          />
           <p>Fast API</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={djangoLogo} />
+          <img className="w-1/3 sm:w-1/4" src={djangoLogo} alt="Django logo" />
           <p>Django</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={htmlLogo} />
+          <img className="w-1/3 sm:w-1/4" src={htmlLogo} alt="HTML logo" />
           <p>HTML</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={cssLogo} />
+          <img className="w-1/3 sm:w-1/4" src={cssLogo} alt="CSS logo" />
           <p>CSS</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={gitLogo} />
+          <img className="w-1/3 sm:w-1/4" src={gitLogo} alt="Git logo" />
           <p>Git</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={tailwindLogo} />
+          <img
+            className="w-1/3 sm:w-1/4"
+            src={tailwindLogo}
+            alt="Tailwind CSS logo"
+          />
           <p>Tailwind CSS</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={postgresLogo} />
+          <img
+            className="w-1/3 sm:w-1/4"
+            src={postgresLogo}
+            alt="PostgreSQL logo"
+          />
           <p>PostgreSQL</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={bootstrapLogo} />
+          <img
+            className="w-1/3 sm:w-1/4"
+            src={bootstrapLogo}
+            alt="Bootstrap logo"
+          />
           <p>Bootstrap</p>
         </li>
         <li className="flex flex-col justify-center items-center">
-          <img className="w-1/3 sm:w-1/4" src={mongoLogo} />
+          <img className="w-1/3 sm:w-1/4" src={mongoLogo} alt="MongoDB logo" />
           <p>MongoDB</p>
         </li>
       </ul>

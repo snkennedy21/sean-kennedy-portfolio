@@ -20,7 +20,7 @@ function PortfolioProject(props) {
         onMouseLeave={projectHoverRemoveHandler}
         className="relative w-full bg-white rounded-lg overflow-hidden"
       >
-        <img src={props.image} />
+        <img src={props.image} alt={props.name} />
         <div
           className={`${
             projectHover ? "opacity-80" : ""
@@ -39,6 +39,7 @@ function PortfolioProject(props) {
               className="flex flex-col justify-center items-center"
               href={props.liveLink}
               target="_blank"
+              rel="noreferrer"
             >
               <FaEye className="w-8 h-8 sm:w-7 sm:h-7 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10"></FaEye>
               <p className="text-sm">Live</p>
@@ -55,6 +56,7 @@ function PortfolioProject(props) {
               className="flex flex-col justify-center items-center"
               href={props.codeLink}
               target="_blank"
+              rel="noreferrer"
             >
               {props.code === "github" ? (
                 <FaGithub className="w-8 h-8 sm:w-7 sm:h-7 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10" />

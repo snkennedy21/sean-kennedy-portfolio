@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../header/DesktopNavigation";
-import MobileNavigation from "../header/MobileNavigation";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import { FaArrowDown } from "react-icons/fa";
 

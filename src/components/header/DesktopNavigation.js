@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { FaGithub, FaGitlab, FaRegFileAlt, FaLinkedin } from "react-icons/fa";
 import Resume from "../../files/Kennedy_Sean_Resume.pdf";
 
@@ -15,6 +14,7 @@ function DesktopNavigation() {
               className="flex flex-col justify-center items-center"
               href="https://github.com/snkennedy21"
               target="_blank"
+              rel="noreferrer"
             >
               <FaGithub className="w-7 h-7 2xl:w-8 2xl:h-8"></FaGithub>
               <p className="text-xs 2xl:text-sm">Github</p>
@@ -25,6 +25,7 @@ function DesktopNavigation() {
               className="flex flex-col justify-center items-center"
               href="https://gitlab.com/snkennedy21"
               target="_blank"
+              rel="noreferrer"
             >
               <FaGitlab className="w-7 h-7 2xl:w-8 2xl:h-8"></FaGitlab>
               <p className="text-xs 2xl:text-sm">Gitlab</p>
@@ -35,6 +36,7 @@ function DesktopNavigation() {
               className="flex flex-col justify-center items-center"
               href={Resume}
               target="_blank"
+              rel="noreferrer"
             >
               <FaRegFileAlt className="w-7 h-7 2xl:w-8 2xl:h-8"></FaRegFileAlt>
               <p className="text-xs 2xl:text-sm">Resume</p>
@@ -45,6 +47,7 @@ function DesktopNavigation() {
               className="flex flex-col justify-center items-center"
               href="https://www.linkedin.com/in/sean-kennedy-208b48232/"
               target="_blank"
+              rel="noreferrer"
             >
               <FaLinkedin className="w-7 h-7 2xl:w-8 2xl:h-8"></FaLinkedin>
               <p className="text-xs 2xl:text-sm">LinkedIn</p>
