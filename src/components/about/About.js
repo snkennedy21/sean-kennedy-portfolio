@@ -13,8 +13,6 @@ import pythonLogo from "../../images/python-logo.png";
 import postgresLogo from "../../images/postgres-logo.png";
 import gitLogo from "../../images/git-logo.png";
 import mongoLogo from "../../images/mongo-logo.png";
-import aboutImage from "../../images/about-image.png";
-import { css } from "@emotion/react";
 
 function About() {
   return (
