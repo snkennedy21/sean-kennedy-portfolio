@@ -6,8 +6,13 @@ function Footer() {
   return (
     <section className="flex flex-col justify-center items-center p-1 border-t-2 border-darkColorTint">
       <p className="text-lightGrey">
-        Built using <img className="w-5 inline" src={reactLogo} /> and{" "}
-        <img className="w-5 inline" src={tailwindLogo} />
+        Built using{" "}
+        <img className="w-5 inline" src={reactLogo} alt="react logo" /> and{" "}
+        <img
+          className="w-5 inline"
+          src={tailwindLogo}
+          alt="tailwind css logo"
+        />
       </p>
       <p className="text-lightGrey text-xs">seankennedy.com © 2022</p>
     </section>
