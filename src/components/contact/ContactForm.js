@@ -11,7 +11,7 @@ function ContactForm() {
         <form
           className="px-0 md:px-10 py-7 w-full max-w-4xl"
           name="contact"
-          netlify
+          action="https://formsubmit.co/7ceef148df559d1e3430a624174100fd"
           method="POST"
         >
           <div className="mb-3 flex flex-col md:flex-row md:justify-between md:gap-2">
@@ -20,7 +20,8 @@ function ContactForm() {
                 className="w-full p-2 bg-darkColorTint text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-lightGrey rounded-md border-darkColor border-2 focus:border-accentPrimary outline-none transition duration-300"
                 type="text"
                 placeholder="Name"
-                name="name"
+                name="Name"
+                required
               ></input>
             </div>
 
@@ -29,7 +30,8 @@ function ContactForm() {
                 className="w-full p-2 bg-darkColorTint text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-lightGrey rounded-md border-darkColor border-2 focus:border-accentPrimary outline-none transition duration-300"
                 type="email"
                 placeholder="Email"
-                name="email"
+                name="Email"
+                required
               ></input>
             </div>
           </div>
@@ -38,7 +40,7 @@ function ContactForm() {
               className="w-full p-2 bg-darkColorTint text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-lightGrey rounded-md border-darkColor border-2 focus:border-accentPrimary outline-none transition duration-300"
               type="text"
               placeholder="Subject"
-              name="subject"
+              name="Subject"
             ></input>
           </div>
 
@@ -47,11 +49,19 @@ function ContactForm() {
               className="w-full p-2 bg-darkColorTint text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-lightGrey rounded-md border-darkColor border-2 focus:border-accentPrimary outline-none transition duration-300"
               rows="5"
               placeholder="Message"
-              name="message"
+              name="Message"
+              required
             ></textarea>
           </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:3001/thankyou"
+          />
           <div className="flex justify-end">
-            <ButtonPrimary>Send Message</ButtonPrimary>
+            <button className="flex items-center justify-center gap-2 border-accentPrimary border rounded-lg px-4 py-2 2xl:px-6 2xl:py-3 2xl:text-3xl text-accentPrimary hover:border-darkColor hover:text-white hover:bg-accentPrimary transition duration-300 cursor-pointer">
+              Submit
+            </button>
           </div>
         </form>
       </div>

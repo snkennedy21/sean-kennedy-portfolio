@@ -14,7 +14,7 @@ function Footer() {
           alt="tailwind css logo"
         />
       </p>
-      <p className="text-lightGrey text-xs">seankennedy.com © 2022</p>
+      <p className="text-lightGrey text-xs">seankennedy.com © 2023</p>
     </section>
   );
 }
