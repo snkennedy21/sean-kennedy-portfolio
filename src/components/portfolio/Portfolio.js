@@ -11,7 +11,7 @@ const projects = [
     name: "Full Stack Overflow",
     tech: "FastAPI  |  React  |  PostgreSQL  |  Tailwind  |  Docker",
     image: fullStackOverflowImage,
-    code: "gitlab",
+    code: "github",
     codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
     liveLink: "https://full-stack-overflow.netlify.app/",
   },
