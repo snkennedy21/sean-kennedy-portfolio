@@ -10,9 +10,9 @@ function ContactForm() {
         </h2>
         <form
           className="px-0 md:px-10 py-7 w-full max-w-4xl"
+          name="contact"
           netlify
           method="POST"
-          action="#"
         >
           <div className="mb-3 flex flex-col md:flex-row md:justify-between md:gap-2">
             <div className="mb-3 md:mb-0 flex flex-col w-full">
