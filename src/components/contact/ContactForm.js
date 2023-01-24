@@ -55,7 +55,7 @@ function ContactForm() {
           <input
             type="hidden"
             name="_next"
-            value="http://localhost:3001/thankyou"
+            value="https://seankennedy.netlify.app/thankyou"
           />
           <div className="flex justify-end">
             <button className="flex items-center justify-center gap-2 border-accentPrimary border rounded-lg px-4 py-2 2xl:px-6 2xl:py-3 2xl:text-3xl text-accentPrimary hover:border-darkColor hover:text-white hover:bg-accentPrimary transition duration-300 cursor-pointer">
