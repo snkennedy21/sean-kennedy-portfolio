@@ -17,15 +17,6 @@ const projects = [
   },
 
   {
-    name: "Deck Reactor",
-    tech: "FastAPI  |  React  |  MongoDB  |  Bootstrap  |  Docker",
-    image: deckreactorImage,
-    code: "gitlab",
-    codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
-    liveLink: "https://mtgt.gitlab.io/module3-project-gamma/",
-  },
-
-  {
     name: "Nerdle Werdle",
     tech: "Javascript  |  HTML  |  CSS ",
     image: nerdleWerdleImage,
@@ -41,6 +32,15 @@ const projects = [
     code: "github",
     codeLink: "https://github.com/snkennedy21/Gourmet-App",
     liveLink: "https://comfy-meringue-3629d2.netlify.app/#close",
+  },
+
+  {
+    name: "Deck Reactor",
+    tech: "FastAPI  |  React  |  MongoDB  |  Bootstrap  |  Docker",
+    image: deckreactorImage,
+    code: "gitlab",
+    codeLink: "https://gitlab.com/mtgt/module3-project-gamma",
+    liveLink: "https://mtgt.gitlab.io/module3-project-gamma/",
   },
 ];
 
