@@ -67,6 +67,9 @@ function PortfolioProject(props) {
             </a>
           </li>
           <li
+            onClick={() => {
+              props.updateSelectedProject(props.project);
+            }}
             className={`${
               projectHover
                 ? "translate-y-0 opacity-100 transition-[opacity,transform] duration-700 delay-300"
@@ -83,6 +86,7 @@ function PortfolioProject(props) {
           {props.tech}
         </p>
       </div>
+      <button></button>
     </div>
   );
 }
