@@ -8,7 +8,7 @@ function DesktopNavigation() {
 
   useEffect(() => {
     setVisible(true);
-  });
+  }, []);
 
   return (
     <React.Fragment>
@@ -94,7 +94,7 @@ function DesktopNavigation() {
                 : "-translate-y-5 opacity-0"
             } text-white hover:text-accentPrimary transition cursor-pointer text-xl 2xl:text-3xl`}
           >
-            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li
             className={`${
@@ -103,7 +103,7 @@ function DesktopNavigation() {
                 : "-translate-y-5 opacity-0"
             } text-white hover:text-accentPrimary transition cursor-pointer text-xl 2xl:text-3xl`}
           >
-            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
           </li>
           <li
             className={`${

@@ -8,6 +8,8 @@ function Contact() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const section = sectionRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -19,10 +21,10 @@ function Contact() {
       },
       { root: null, rootMargin: "0px", threshold: 0.2 }
     );
-    observer.observe(sectionRef.current);
+    observer.observe(section);
 
     return () => {
-      observer.unobserve(sectionRef.current);
+      observer.unobserve(section);
     };
   }, []);
 

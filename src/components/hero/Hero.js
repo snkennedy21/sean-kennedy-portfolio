@@ -8,7 +8,7 @@ function Hero() {
 
   useEffect(() => {
     setVisible(true);
-  });
+  }, []);
 
   return (
     <React.Fragment>
