@@ -32,6 +32,7 @@ const Modal = ({ project, setIsModalOpen, isModalOpen }) => {
               target="_blank"
               href={project.codeLink}
               className="bg-accentPrimary py-2 px-4 rounded-md hover:bg-accentPrimaryTint transition"
+              rel="noreferrer"
             >
               View Code
             </a>
@@ -39,6 +40,7 @@ const Modal = ({ project, setIsModalOpen, isModalOpen }) => {
               target="_blank"
               href={project.liveLink}
               className="bg-accentPrimary py-2 px-4 rounded-md hover:bg-accentPrimaryTint transition"
+              rel="noreferrer"
             >
               Live Version
             </a>
