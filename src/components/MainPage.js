@@ -12,8 +12,8 @@ function MainPage() {
       <DesktopNavigation />
       <MobileNavigation />
       <Hero />
-      <About />
       <Portfolio />
+      <About />
       <Contact />
     </React.Fragment>
   );

@@ -3,7 +3,7 @@ import React from "react";
 function ContactForm() {
   return (
     <React.Fragment>
-      <div className="flex flex-col justify-center items-center py-24 sm:py-56">
+      <div className="flex flex-col justify-center items-center py-24 ">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-accentPrimary">
           Send Me a Message
         </h2>

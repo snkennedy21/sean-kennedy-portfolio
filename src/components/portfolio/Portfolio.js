@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect, useRef } from "react";
 import PortfolioProject from "./PortfolioProject";
 import deckreactorImage from "../../images/deckreactor-image.png";
 import nerdleWerdleImage from "../../images/nerdle-werdle-image.png";
@@ -45,23 +46,55 @@ const projects = [
 ];
 
 function Portfolio() {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { root: null, rootMargin: "0px", threshold: 0.2 }
+    );
+    observer.observe(sectionRef.current);
+
+    return () => {
+      observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
   return (
-    <section id="portfolio" className="mx-12 md:mx-16 lg:mx-28">
-      <SectionHeader>Portfolio</SectionHeader>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-10">
-        {projects.map((project) => {
-          return (
-            <PortfolioProject
-              key={project.name}
-              image={project.image}
-              name={project.name}
-              tech={project.tech}
-              code={project.code}
-              codeLink={project.codeLink}
-              liveLink={project.liveLink}
-            />
-          );
-        })}
+    <section
+      ref={sectionRef}
+      id="portfolio"
+      className="mx-3.5 mx-12 md:mx-16 lg:mx-28"
+    >
+      <div
+        className={`${
+          isVisible ? "translate-y-0 opacity-1" : "translate-y-20 opacity-0"
+        } transition duration-700`}
+      >
+        <SectionHeader>Portfolio</SectionHeader>
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-10">
+          {projects.map((project) => {
+            return (
+              <PortfolioProject
+                key={project.name}
+                image={project.image}
+                name={project.name}
+                tech={project.tech}
+                code={project.code}
+                codeLink={project.codeLink}
+                liveLink={project.liveLink}
+              />
+            );
+          })}
+        </div>
       </div>
     </section>
   );

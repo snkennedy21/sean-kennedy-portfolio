@@ -1,12 +1,23 @@
 import React from "react";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import { FaArrowDown } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 function Hero() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  });
+
   return (
     <React.Fragment>
       {/* <Header></Header> */}
-      <section className="h-screen flex flex-col gap-4 justify-center items-center">
+      <section
+        className={`${
+          visible ? "opacity-1" : "translate-y-20 opacity-0"
+        } h-screen flex flex-col gap-4 justify-center items-center transition delay-1000 duration-1000`}
+      >
         <h1 className="text-white text-5xl sm:text-7xl 2xl:text-8xl">
           Sean Kennedy
         </h1>
